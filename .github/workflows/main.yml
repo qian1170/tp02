@@ -33,6 +33,9 @@ jobs:
       #steps to perform in job
       steps:
         - name: Checkout code
+          uses: actions/checkout@v2.5.0
+          
+        - name: Build image and push backend
           uses: docker/build-push-action@v3
           with:
           #relative path to the place where source code with Dockerfile is located
