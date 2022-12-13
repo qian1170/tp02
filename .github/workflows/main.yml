@@ -18,9 +18,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
-          #cache: 'maven'
+          cache: 'maven'
 
      #finally build your app with the latest command
       - name: Build and test with Maven
-        run: mvn clean verify --file /BackendAPI/simple-api-student-main/simple-api-student-main/pom.xml
+        run: mvn clean verify --file BackendAPI/simple-api-student-main/simple-api-student-main/pom.xml
         
